@@ -1,0 +1,15 @@
+{
+  "name": "backend-desafio-koa",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "L-Molina <lautarogabrielmolina@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "mocha": "^10.1.0",
+    "supertest": "^6.3.3"
+  },
+  "dependencies": {
+    "koa": "^2.14.1"
+  }
+}
