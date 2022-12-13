@@ -1,8 +1,9 @@
-import { Router } from "express";
+import pkg from 'koa-router';
+const { pkg: Router } = pkg;
 import { getError , postError, deleteError, putError} from "../../controllers/error.js";
 
 //router
-const error = Router();
+let error = new Router();
 
 error.get("*", getError);
 error.post("*", postError);

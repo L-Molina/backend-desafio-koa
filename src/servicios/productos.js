@@ -1,27 +1,27 @@
-import { productosDao } from "../containers/Daos/index.js";
+import { productosDao } from "../containers/daos/index.js";
 
 const getAllProducts = async () => {
-  const products = await productsDao.list();
+  const products = await productosDao.list();
   return products;
 }
 
 const getProduct = async (id) => {
-  const product = await productsDao.getById(id);
+  const product = await productosDao.getById(id);
   return product;
 }
 
 const saveProduct = async (product) => {
-  const newProduct = await productsDao.save(product);
+  const newProduct = await productosDao.save(product);
   return newProduct;
 }
 
 const deleteProduct = async (id) => {
-  const product = await productsDao.deleteById(id);
+  const product = await productosDao.deleteById(id);
   return product;
 }
 
 const updateProduct = async (id, product) => {
-  const newProduct = await productsDao.changeById(id, product);
+  const newProduct = await productosDao.changeById(id, product);
   return newProduct;
 }
 

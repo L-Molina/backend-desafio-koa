@@ -1,8 +1,9 @@
-import { Router } from 'express';
-import {getProductsList, getProductsListById, postProductsList, updateProductsList, deleteProductsList} from '../../controllers/productsList.js';
+import pkg from 'koa-router';
+const { pkg: Router } = pkg;
+import { getProductsList, getProductsListById, postProductsList, updateProductsList, deleteProductsList } from '../../controllers/productsList.js';
 
 //router
-const productsList = Router();
+let productsList = new Router();
 
 /* get the products */
 productsList.get("/", getProductsList);

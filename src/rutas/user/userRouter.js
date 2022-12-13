@@ -1,7 +1,8 @@
-import { Router } from "express";
+import pkg from 'koa-router';
+const { pkg: Router } = pkg;
 import { getUsuario } from "../../controllers/user.js";
 
-const user = Router();
+let user = new Router();
 
 user.get("/", getUsuario);
 
