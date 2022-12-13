@@ -1,4 +1,4 @@
-import { getUser } from '../servicios/usuarios.js';
+import {getUser} from '../servicios/usuarios.js';
 
 //import logger
 import { sendInfoLog } from '../logs/logger.js';

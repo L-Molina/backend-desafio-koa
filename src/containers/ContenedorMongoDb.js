@@ -1,4 +1,4 @@
-import '../connection/connection.js';
+import '../connection/connection.js'; //corroborar si asi se conecta
 
 class ContenedorMongoDb {
   constructor(schema) {

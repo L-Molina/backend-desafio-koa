@@ -1,4 +1,4 @@
-import { getAllProducts, getProduct, saveProduct, updateProduct, deleteProduct } from '../servicios/productos.js';
+import {getAllProducts, getProduct, saveProduct, updateProduct, deleteProduct} from '../servicios/productos.js';
 
 const getProducts = async () => {  
   const productos = await getAllProducts();

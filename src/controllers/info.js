@@ -1,4 +1,4 @@
-import { getInfo } from '../servicios/info.js';
+import {getInfo} from '../servicios/info.js';
 
 //import logger
 import { sendInfoLog } from '../logs/logger.js';
